@@ -128,3 +128,10 @@ Determined how to minimize cost with the use of solver tool in excel for the fir
     ' Notify the user
     MsgBox "Output table generated successfully.", vbInformation
     End Sub
+
+### 3. Tableau
+- **Total Cost**: Used basic bar chart to display cost for every scenario
+- **Warehouse Capacity Utilization**: Used horizontal bar chart using warehouse averages from each scenario
+- **Warehouse Relationship to Stores**: Created separtate bar charts for each store aiming to find which warehouse was utilized by most stores
+- **Transportation Costs and Cost Variance**: Looking to find relationship between cost variance and transportation costs using scatter plot
+- **Demand and Cost**: Looking to see if total demand and total transportation cost has a positive or negative correlation
