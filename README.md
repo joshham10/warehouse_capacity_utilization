@@ -139,10 +139,12 @@ Sub GenerateOutput()
 - **Demand and Cost**: Looking to see if total demand and total transportation cost has a positive or negative correlation
 
 ## Findings
-
 -**Warehouse Capacity Utilization**: Warehouse 1 utilized their capacity the best with warehouse 2 being the second most effective and warehouse 3 being the least effective
+
 -**Warehouse Relationship to Stores**: Warehouse 2 was likely the most important to the needs of store 1, warehouse 3 serves the most importnat role in the majority of the scenarios and warehouse seems to have the least amount of impact on the scenarios
+
 -**Transportation and Cost Variance**: As transportation costs increases, so does cost variance. This is likely due to an element of variability and change, requiring more investment in flexible but costly transportation
+
 -**Impact of Demand on Cost**: There is a positive correlation between both the variables meaning that as demand increases, total transportation costs also rise likely because of the increased shipping quantities resulting in further cost
 
 ## Author - Joshua Hampton
