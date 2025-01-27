@@ -12,7 +12,7 @@ Determined how to minimize cost with the use of solver tool in excel for the fir
 
 - **Edit in VBA to Automate**: Changed code to automatically run macro through all 100 scenarios
 
-'''vba
+```vba
     
     Sub Solver()
     ' Loop through all "Scenario_1" to "Scenario_100"
@@ -77,18 +77,19 @@ Determined how to minimize cost with the use of solver tool in excel for the fir
     ' Notify user when all scenarios are processed
     MsgBox "Solver automation completed for all scenarios.", vbInformation
     End Sub
+```
 
 - **Add Output Sheet**: Add new Sub to publish findings to a separate output sheet
 
-'''vba
+```vba
 
-    Sub GenerateOutput()
-      Dim wsOutput As Worksheet
-      Dim wsScenario As Worksheet
-      Dim scenarioName As String
-      Dim totalCost As Double
-      Dim i As Long
-      Dim outputRow As Long
+Sub GenerateOutput()
+    Dim wsOutput As Worksheet
+    Dim wsScenario As Worksheet
+    Dim scenarioName As String
+    Dim totalCost As Double
+    Dim i As Long
+    Dim outputRow As Long
     
     ' Set the Output sheet
     Set wsOutput = ThisWorkbook.Sheets("Output")
@@ -128,6 +129,7 @@ Determined how to minimize cost with the use of solver tool in excel for the fir
     ' Notify the user
     MsgBox "Output table generated successfully.", vbInformation
     End Sub
+```
 
 ### 3. Tableau
 - **Total Cost**: Used basic bar chart to display cost for every scenario
@@ -135,3 +137,19 @@ Determined how to minimize cost with the use of solver tool in excel for the fir
 - **Warehouse Relationship to Stores**: Created separtate bar charts for each store aiming to find which warehouse was utilized by most stores
 - **Transportation Costs and Cost Variance**: Looking to find relationship between cost variance and transportation costs using scatter plot
 - **Demand and Cost**: Looking to see if total demand and total transportation cost has a positive or negative correlation
+
+## Findings
+
+-**Warehouse Capacity Utilization**: Warehouse 1 utilized their capacity the best with warehouse 2 being the second most effective and warehouse 3 being the least effective
+-**Warehouse Relationship to Stores**: Warehouse 2 was likely the most important to the needs of store 1, warehouse 3 serves the most importnat role in the majority of the scenarios and warehouse seems to have the least amount of impact on the scenarios
+-**Transportation and Cost Variance**: As transportation costs increases, so does cost variance. This is likely due to an element of variability and change, requiring more investment in flexible but costly transportation
+-**Impact of Demand on Cost**: There is a positive correlation between both the variables meaning that as demand increases, total transportation costs also rise likely because of the increased shipping quantities resulting in further cost
+
+## Author - Joshua Hampton
+
+The project is part of my portfolio, displaying my skills in VBA, Excel, Tableau, and my understanding of the visulizations from the data, all important skills for a business/data analyst role. If you have any questions or thoughts please feel free to contact me!
+
+
+Contact Information:
+Email - josh.hampton735@gmail.com
+LinkedIn: https://www.linkedin.com/in/josh-hampton/
